@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import * as S from './styled';
-import { useHistory } from 'react-router-dom';
 import abajur from './../images/abajur.jpg'
 import quadro_decorativo from './../images/quadro_paisagem.png'
 import vaso_flores from './../images/vaso_flor.jpg'
 
 function App(props) {
-  const history = useHistory();
   const [email, setemail] = useState('');
   const [erro, setErro] = useState(false);
   const [sucesso, setSucesso] = useState(false);
